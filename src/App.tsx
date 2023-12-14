@@ -13,8 +13,10 @@ import Block2 from './pages/Block2'
 import Role from './pages/Role'
 // import TaskReview from './pages/TaskReview/TaskReview'
 import TaskReview2 from './pages/TaskReview2'
-import { TaskSubmit } from './pages/TaskSubmit'
-import TaskReview from './pages/TaskReview/TaskReview'
+
+import TaskSubmit from './pages/TaskSubmit'
+import TaskReview from './pages/TaskReview'
+import Nft from './pages/Nft'
 // import { TaskReview } from './pages/TaskReview'
 // import MyComponent from './components/MyComponent'
 // import TaskSubmit from './pages/TaskSubmit/TaskSubmit'
@@ -31,9 +33,10 @@ export const App = () => {
           <Route path='/block1' element={<Manage />} />
           <Route path='/block2' element={<Block2 />} />
           <Route path='/role' element={<Role />} />
-          {/* <Route path='/taskSubmit' element={<MyComponent />} /> */}
+          <Route path='/taskSubmit' element={<TaskSubmit />} />
           <Route path='/taskReview' element={<TaskReview />} />
           <Route path='/taskReview2' element={<TaskReview2 />} />
+          <Route path='/nft' element={<Nft />} />
           <Route path='/' element={<Display />} />
         </Routes>
         <MetaMaskError />
